@@ -1,0 +1,219 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: rgb(223, 223, 223);
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.8rem;
+  padding: 1rem 0;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h4{
+  font-size: 2.4rem;
+}
+h5, 
+h6, 
+p {
+  font-size: 2.2rem;
+}
+
+a {
+  font-size: 1.8rem;
+}
+
+small {
+  font-size: 1.4rem;
+  padding-left: .5rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* NAVIGATION */
+.landing-wrapper {
+  height: 6rem;
+  border-bottom: .1rem solid rgb(223, 223, 223);
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.landing > figure {
+  margin: 1rem 0 0 1rem;
+}
+
+.landing > figure > img {
+  height: 4rem;
+  opacity: .9;
+}
+
+.navigation > ul {
+  display: flex;
+}
+
+.navigation > ul > li:nth-child(n+2) {
+  padding-left: 1.5rem;
+}
+
+.navigation > ul > li > a {
+  color:rgb(223, 223, 223);
+  text-decoration: none;
+}
+
+.navigation {
+  margin-right: 1rem;
+}
+
+/* MISSION SECTION */
+main {
+  text-align: center;
+}
+
+.mission {
+  background-image: url(../images/img-mission-background.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: .1rem solid rgb(223, 223, 223);
+}
+
+.mission > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.mission > div > div {
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+}
+
+.mission > div > div > h4 {
+  padding: 0 0 1rem 0;
+}
+
+/* FEATURED SECTION */
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0;
+  border-bottom: .1rem solid rgb(223, 223, 223);
+}
+
+.featured > section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > img {
+  height: 20rem;
+  width: 30rem;
+}
+
+.pics {
+  padding: 2rem 0 0 0;
+}
+
+.box {
+  padding: 0 .5rem 2rem .5rem;
+}
+
+/* LOCATIONS */
+.locations {
+  background-image: url(../images/img-locations-background.jpg);
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: .1rem solid rgb(223, 223, 223);
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+}
+
+.position > div > section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.position > div {
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: .5rem;
+  padding: 1rem .5rem;
+}
+
+.card {
+  background-color: black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  width: 25.75rem;
+}
+
+/* FOOTER */
+footer {
+  height: 25rem;
+}
+
+.contact {
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
